@@ -4,3 +4,13 @@ version = "0.1.0"
 authors = ["Michael-F-Bryan <michaelfbryan@gmail.com>"]
 license = "MIT OR Apache-2.0"
 edition = "2018"
+
+[dependencies]
+serde = "1.0.125"
+serde_json = { version = "1.0.64", optional = true, default-features = false }
+serde_yaml = { version = "0.8.17", optional = true, default-features = false }
+
+[features]
+default = []
+json = ["serde_json"]
+yaml = ["serde_yaml"]

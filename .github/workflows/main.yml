@@ -23,15 +23,15 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: check
-          args: --all --verbose
+          args: --verbose --all-features
       - uses: actions-rs/cargo@v1
         with:
           command: build
-          args: --all --verbose
+          args: --verbose --all-features
       - uses: actions-rs/cargo@v1
         with:
           command: test
-          args: --all --verbose
+          args: --verbose --all-features
 
   api-docs:
     name: Publish API Docs to GitHub Pages
@@ -50,7 +50,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: doc
-          args: --all --verbose
+          args: --all --verbose --all-features
       - name: Redirect top-level GitHub Pages
         run: "echo '<meta http-equiv=\"refresh\" content=\"0; url=serde_spanned/index.html\" />' > target/doc/index.html"
         shell: bash
