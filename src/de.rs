@@ -1,4 +1,4 @@
-use crate::SpannedDeserializer;
+use crate::Offset;
 
 #[derive(Debug, Clone, PartialEq)]
 pub struct Deserializer<D>(D);
@@ -13,17 +13,16 @@ impl<D> Deserializer<D> {
     pub fn into_inner(self) -> D { self.0 }
 }
 
-impl<'de, D: SpannedDeserializer<'de>> Deserializer<D> {
+impl<D: Offset> Deserializer<D> {
     pub fn offset(&self) -> usize { self.0.offset() }
 }
 
-impl<'de, D: SpannedDeserializer<'de>> SpannedDeserializer<'de>
-    for Deserializer<D>
+impl<D: Offset> Offset for Deserializer<D>
 {
     fn offset(&self) -> usize { self.0.offset() }
 }
 
-impl<'de, D: serde::Deserializer<'de>> serde::Deserializer<'de>
+impl<'de, D: serde::Deserializer<'de> + Offset> serde::Deserializer<'de>
     for Deserializer<D>
 {
     type Error = D::Error;
