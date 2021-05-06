@@ -6,13 +6,7 @@ license = "MIT OR Apache-2.0"
 edition = "2018"
 
 [dependencies]
-serde = "1.0.125"
-serde_json = { version = "1.0.64", optional = true, default-features = false, features = ["alloc"] }
-serde_yaml = { version = "0.8.17", optional = true, default-features = false }
-toml = { version = "0.5.8", optional = true, default-features = false }
+serde = { version = "1.0.125", default-features = false }
 
-[features]
-default = ["std"]
-json = ["serde_json", "std"]
-yaml = ["serde_yaml", "std"]
-std = []
+[dev-dependencies]
+serde_derive = "1.0.125"

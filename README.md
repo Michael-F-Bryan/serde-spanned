@@ -1,10 +1,10 @@
-# serde-spanned
+# Serde Spanned
 
 [![Continuous integration](https://github.com/Michael-F-Bryan/serde-spanned/workflows/Continuous%20integration/badge.svg?branch=master)](https://github.com/Michael-F-Bryan/serde-spanned/actions)
 
 ([API Docs])
 
-A library for retrieving span information while deserializing with `serde`.
+A common abstraction for retrieving span information while deserializing.
 
 ## License
 
