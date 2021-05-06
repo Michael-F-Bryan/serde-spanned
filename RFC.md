@@ -7,7 +7,7 @@ with the end user without either party knowing the existence of the other.
 This will be implemented by using a convention known by deserializer
 implementations and some common items exposed from the `serde` crate. This has
 been phrased as RFC instead of a simple GitHub issue as it would require
-coordination across multiple projects.
+coordination with multiple high-profile projects across the Rust ecosystem.
 
 ## Motivation
 
