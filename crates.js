@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["serde","serde_spanned"];

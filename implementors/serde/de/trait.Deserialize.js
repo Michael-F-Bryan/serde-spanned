@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["serde_spanned"] = [{"text":"impl&lt;'de, T:&nbsp;<a class=\"trait\" href=\"serde/de/trait.Deserialize.html\" title=\"trait serde::de::Deserialize\">Deserialize</a>&lt;'de&gt;&gt; <a class=\"trait\" href=\"serde/de/trait.Deserialize.html\" title=\"trait serde::de::Deserialize\">Deserialize</a>&lt;'de&gt; for <a class=\"struct\" href=\"serde_spanned/struct.Spanned.html\" title=\"struct serde_spanned::Spanned\">Spanned</a>&lt;T&gt;","synthetic":false,"types":["serde_spanned::Spanned"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
