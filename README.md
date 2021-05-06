@@ -4,7 +4,8 @@
 
 ([API Docs])
 
-A common abstraction for retrieving span information while deserializing.
+A common abstraction for retrieving span information while deserializing. See
+[the corresponding RFC][rfc] for more details.
 
 ## License
 
@@ -32,3 +33,4 @@ do their best to avoid them, and welcome help in analysing and fixing them.
 
 [API Docs]: https://michael-f-bryan.github.io/serde-spanned
 [crev]: https://github.com/crev-dev/cargo-crev
+[rfc]: RFC.md

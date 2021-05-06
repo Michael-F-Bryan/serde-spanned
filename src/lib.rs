@@ -10,11 +10,12 @@ use serde::{
     Deserialize, Deserializer, Serialize, Serializer,
 };
 
-pub(crate) const NAME: &str = "$__private_serde_spanned";
-pub(crate) const START: &str = "$__private_serde_spanned_start";
-pub(crate) const END: &str = "$__private_serde_spanned_end";
-pub(crate) const VALUE: &str = "$__private_serde_spanned_value";
-pub(crate) const FIELDS: &[&str] = &[START, END, VALUE];
+pub const NAME: &str = "$__serde_private_Spanned";
+pub const START: &str = "$__serde_private_start";
+pub const END: &str = "$__serde_private_end";
+pub const VALUE: &str = "$__serde_private_value";
+
+pub const FIELDS: &[&str] = &[START, END, VALUE];
 
 #[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub struct Spanned<T> {
